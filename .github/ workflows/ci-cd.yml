@@ -1,1 +1,13 @@
+name: My First Pipeline   # Name of workflow
 
+on:
+  push:
+    branches: [ "main" ]  # Trigger
+
+jobs:
+  build:                 # Job name
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1
+        run: echo "Hello World"
